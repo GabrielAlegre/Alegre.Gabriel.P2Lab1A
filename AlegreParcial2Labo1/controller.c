@@ -7,7 +7,6 @@
 #include "input.h"
 #include "parser.h"
 
-
 int controller_cargarArchivo(LinkedList* pArrayListaPelis)
 {
 	int todoOk=0;
@@ -54,7 +53,7 @@ int controller_listarPelis(LinkedList* pArrayListaPelis)
 {
 	int todoOk=0;
 	int tam;
-	eMovie* pais=NULL;
+	eMovie* pelis=NULL;
 
 	if(pArrayListaPelis!=NULL)
 	{
@@ -66,17 +65,17 @@ int controller_listarPelis(LinkedList* pArrayListaPelis)
 			printf(" %-10s %-30s %-30s %-20s\n","Id","titulo","genero","duracion");
 			for (int i = 0; i < tam; ++i)
 			{
-				pais = (eMovie*) ll_get(pArrayListaPelis, i);
+				pelis = (eMovie*) ll_get(pArrayListaPelis, i);
 
-				if(pais!=NULL)
+				if(pelis!=NULL)
 				{
-					mostrarUnaPeli(pais);
+					mostrarUnaPeli(pelis);
 				}
 			}
 		}
 		else
 		{
-			printf("No hay ningun pais que mostrar\n");
+			printf("No hay ningun pelis que mostrar\n");
 		}
 	}
     return todoOk;
@@ -220,7 +219,7 @@ int controller_filterPeliGenero(LinkedList* pArrayListaPelis)
                         break;
 
                     case 2:
-                                                listaFiltrada = ll_filter(pArrayListaPelis, filtroPeliculasDrama);
+                        listaFiltrada = ll_filter(pArrayListaPelis, filtroPeliculasDrama);
                         controller_guardarListaTexto("pelisDrama.csv", listaFiltrada);
                          printf("\nSe ha generado un archivo de salida (pelisDrama.csv)\n");
                         break;

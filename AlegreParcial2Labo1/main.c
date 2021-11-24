@@ -10,6 +10,7 @@ int main()
     srand(time(NULL));
     char salir='n';
 
+    char path[40];
     LinkedList* listaDePelis = ll_newLinkedList();
 
     do{
@@ -47,7 +48,11 @@ int main()
 
             case 6:
 
-               // controller_guardarListaTexto(listaDePelis);
+                printf("Ingrese el nombre del archivo que quiere guardar: ");
+                fflush(stdin);
+                gets(path);
+
+                controller_guardarListaTexto(path, listaDePelis);
 
                 break;
 

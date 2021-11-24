@@ -16,7 +16,7 @@
 
 1637719920 c:\users\gabri\desktop\programacionuno\alegreparcial2labo1\linkedlist.h
 
-1637764341 source:c:\users\gabri\desktop\programacionuno\alegreparcial2labo1\main.c
+1637765068 source:c:\users\gabri\desktop\programacionuno\alegreparcial2labo1\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -24,7 +24,7 @@
 	"LinkedList.h"
 	"controller.h"
 
-1637764731 source:c:\users\gabri\desktop\programacionuno\alegreparcial2labo1\controller.c
+1637764958 source:c:\users\gabri\desktop\programacionuno\alegreparcial2labo1\controller.c
 	<stdio.h>
 	<stdlib.h>
 	"controller.h"
